@@ -20,9 +20,15 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <AppBar Grid.ColumnSpan="3">
+            <AppBarButton Icon="Home" Label="Home" Click="AppBarButton_Click" />
+        </AppBar>
+
         <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" >Special Request:</TextBlock>
         <TextBlock Grid.Row="1" Grid.Column="2" VerticalAlignment="Top" >Order Items:</TextBlock>
-        <TextBlock Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">**Add to Order**</TextBlock>
-        <TextBlock Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2">**Submit Order**</TextBlock>
+        <Button Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click">Add to Order</Button>
+        <Button Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2" Click="Button_Click_1">Submit Order</Button>
+        <ListView Grid.Row="2" Grid.Column="0" ></ListView>
+        <ListView Grid.Row="2" Grid.Column="2" ></ListView>
     </Grid>
 </Page>

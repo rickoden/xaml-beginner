@@ -17,13 +17,14 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
+
         <TextBlock Grid.Row="0" VerticalAlignment="Bottom" 
                    HorizontalAlignment="Center" Grid.ColumnSpan="2">Restaurant Manager</TextBlock>
         <TextBlock Grid.Row="1" VerticalAlignment="Bottom" 
                    HorizontalAlignment="Center"  Grid.ColumnSpan="2" FontSize="24">Internal Test Version</TextBlock>
-        <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"
-                   HorizontalAlignment="Center" >**Go To Orders View**</TextBlock>
-        <TextBlock Grid.Row="3" Grid.Column="1"  VerticalAlignment="Center"
-                   HorizontalAlignment="Center" >**Submit Orders**</TextBlock>
+        <Button Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"
+                   HorizontalAlignment="Center" Click="Button_Click" Tag="GoToOrders" >Go To Orders View</Button>
+        <Button Grid.Row="3" Grid.Column="1"  VerticalAlignment="Center"
+                   HorizontalAlignment="Center" Background="#FF3B434F" Tag="GoToSubmit" Click="Button_Click">Submit Orders</Button>
     </Grid>
 </Page>

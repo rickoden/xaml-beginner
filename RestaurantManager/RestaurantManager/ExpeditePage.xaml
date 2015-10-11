@@ -9,10 +9,20 @@
 
     <Grid Background="Black">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="1" HorizontalAlignment="Center" Grid.ColumnSpan="2" 
-                   VerticalAlignment="Center">**Clear All Orders**</TextBlock>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <AppBar x:Name="topAppBar" Grid.Row="0" Grid.Column="0" IsOpen="True">
+            <AppBarButton Icon="Home" Label="Home" Click="AppBarButton_Click_1"  />
+        </AppBar>
+        <Button Grid.Row="2" HorizontalAlignment="Center" Grid.ColumnSpan="2" 
+                   VerticalAlignment="Center">Clear All Orders</Button>
+        <GridView Grid.Row="1" Grid.Column="0">
+            
+        </GridView>
     </Grid>
 </Page>

@@ -7,6 +7,9 @@
     <Application.Resources>
         <Style TargetType="Button">
             <Setter Property="FontSize" Value="32" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Background" Value="#FF4D4646" />
+            <Setter Property="BorderBrush" Value="#FF358585"/>
         </Style>
         <Style TargetType="TextBlock">
             <Setter Property="FontSize" Value="32" />
