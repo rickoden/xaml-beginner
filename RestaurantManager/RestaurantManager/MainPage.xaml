@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="RestaurantManager.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RestaurantManager"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF040404">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" VerticalAlignment="Bottom" 
+                   HorizontalAlignment="Center" Grid.ColumnSpan="2">Restaurant Manager</TextBlock>
+        <TextBlock Grid.Row="1" VerticalAlignment="Bottom" 
+                   HorizontalAlignment="Center"  Grid.ColumnSpan="2" FontSize="24">Internal Test Version</TextBlock>
+        <Button Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"
+                   HorizontalAlignment="Center" Click="Button_Click" Tag="GoToOrders" >Go To Orders View</Button>
+        <Button Grid.Row="3" Grid.Column="1"  VerticalAlignment="Center"
+                   HorizontalAlignment="Center" Background="#FF3B434F" Tag="GoToSubmit" Click="Button_Click">Submit Orders</Button>
+    </Grid>
+</Page>
